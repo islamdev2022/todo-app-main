@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="todo.js" defer></script>
+    <title>Frontend Mentor | Todo app</title>
+</head>
+<body >
+    <div class="image">
+        <h1>TODO</h1>
+       <button id="darkModeToggle"> <img src="images/icon-moon.svg" alt="" id="mode" class="mode" width="20" height="20"></button>
+    </div>
+    <div class="all">
+        <input type="text" placeholder="Create a new Todo" id="type" class="do">
+        <button id="add">ADD</button>
+        <ul id="to" tasks="" class="ulu"></ul>
+        <ul id="completed"></ul>
+        <div class="below">
+            <p class="it"><span id="nbritem"></span> items left</p>
+            <ul id="links">
+                <li class="btns">All</li>
+                <li class="btns">Active</li>
+                <li class="btns">Completed</li>
+            </ul>
+            <p id="clear">Clear Completed</p>
+        </div>
+    </div>
+    <p id="dp">Drag and Drop to reoeder list </p>
+</body>
+</html>

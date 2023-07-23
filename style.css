@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+}
+.all{
+    margin-left: auto;
+  margin-right: auto;
+  display: table;
+  position: relative;
+  bottom: 80px;
+  border-radius: 10px;
+  box-shadow: rgb(190, 190, 190) 10px 10px 50px;
+  }
+.below{
+    display: flex ;
+    font-size: 14px;
+    width: 100%;
+}   
+.image{
+    background-image: url(images/bg-desktop-light.jpg);
+    height: 300px;
+    z-index: 9999;
+    display:flex;
+    justify-content: center;
+  align-items: center;
+  gap: 220px;
+}
+.mode{
+    cursor: pointer;
+}
+button{
+    background-color: transparent;
+    border:transparent;
+}
+
+ /*-------------------- CSS FOR DARK MODE------------------------ */
+.dark-mode.image {
+    background-image: url(images/bg-desktop-dark.jpg);
+}
+body.dark-mode {
+    background-color:hsl(236, 15%, 18%) ;
+}
+.dark-mode.do {
+    background-color:hsl(237, 14%, 26%);
+}
+.dark-mode.all {
+    background-color: hsl(237, 14%, 26%);
+    box-shadow: rgb(34, 34, 34) 0px 15px 50px;
+}
+.dark-mode li {
+    background-color: hsl(237, 14%, 26%);
+}
+.dark-mode#links li:hover{
+    color: white;
+}
+.dark-mode#links li:active{
+    color: rgb(75, 75, 255);
+}
+.dark-mode#clear:hover{
+    color: white;
+}
+/* -----------------------END--------------------------- */
+
+p,h1,li,:placeholder-shown{
+    font-family:'Josefin Sans' ;
+}
+h1{
+    color: white;
+    letter-spacing: 15px;
+}
+
+#links{
+    display: flex;
+    gap: 30px;
+list-style: none;
+color: rgb(161, 161, 161);
+}
+#links li:hover{
+    color: rgb(32, 32, 32);
+}
+#links li:active{
+    color: rgb(75, 75, 255);
+}
+input{
+    width: 99%;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+}
+#to{
+    padding: 0;
+}
+#to li{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+    list-style: none ;
+    border-bottom: 1px solid black;
+    border-radius: 3px; 
+}
+.del{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    
+}
+#add{
+    float: right;
+    position: relative;
+    bottom: 45px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: rgb(99, 99, 243);
+    font-family: 'Josefin Sans' ;
+    cursor: pointer;
+    border: transparent;
+    color: whitesmoke;
+    align-items: center;
+}
+.checking{                    /*  FOR THE CHECK BUTTON */
+   position: absolute;
+   left: 10px;
+   cursor: pointer;
+   background-color: rgb(116, 106, 255);
+   padding: 7px;
+   border-radius: 50px;
+   display: block;
+}
+.check{                    /* FOR THE CHECK LINE */
+    text-decoration: line-through; 
+    color: rgb(76, 0, 252);
+    text-align: center;
+    opacity: 0.5;
+}
+#clear{                 /*TO DELETE THE TASKS*/
+    cursor: pointer;
+    text-align: center;
+    color: rgb(161, 161, 161);
+}
+#clear:hover{
+    color: rgb(32, 32, 32);
+}
+.btns{
+    cursor: pointer;
+
+}
+.it{
+    width: 25%;
+    color: rgb(161, 161, 161);
+}
+#type::placeholder {
+    padding-left: 20px; /* Adjust horizontal placement by pixels */
+    padding-top: 5px; /* Adjust vertical placement by pixels */
+  }
+#dp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(161, 161, 161);
+  }
+.dragging {
+    opacity: 0.5;
+  }
+.drag-over {
+    border: 2px dashed #000;
+    cursor:pointer;
+  }
+
+@media (max-width:475px) {
+    *{
+        margin: 0;
+    }
+    #links{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 80px;
+        border: transparent;
+        border-radius: 10px;
+        padding: 15px 50px 15px 50px;
+        box-shadow: rgb(190, 190, 190) 0px 1px 90px;
+        background-color: #fff;
+    }
+    .all{
+        width: 80%;
+    }
+    .it{
+       position: absolute;
+       left: 10px;        
+    }
+    #clear{
+       position: absolute;
+       right: 10px;
+    }
+    .image{
+        gap: 150px;
+        background-image: url(images/bg-mobile-light.jpg);
+    }
+    .dark-mode.image{
+        background-image: url(images/bg-mobile-dark.jpg);
+    }
+    .dark-mode#links{
+        background-color:hsl(237, 14%, 26%);
+        box-shadow: rgb(34, 34, 34) 0px 15px 50px;
+    }
+}
