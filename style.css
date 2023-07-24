@@ -35,6 +35,9 @@ button{
 }
 
  /*-------------------- CSS FOR DARK MODE------------------------ */
+.dark-mode#type{
+    color:white;
+}
 .dark-mode.image {
     background-image: url(images/bg-desktop-dark.jpg);
 }
