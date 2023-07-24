@@ -155,7 +155,7 @@ darkModeToggle.addEventListener('click', toggleDarkMode);
 function toggleDarkMode() {
   document.body.classList.toggle('dark-mode');
   
-  const elementsToToggle = document.querySelectorAll('.image,.body, .do,.ulu,.all,li,#links,#clear');
+  const elementsToToggle = document.querySelectorAll('.image,.body, .do,.ulu,.all,li,#links,#clear,#type');
   elementsToToggle.forEach(element => {             // THIS IS FOR ADDING THE CLASS "DARK MODE" INTO THE ELEMENTS I WANT (ABOVE) 
     element.classList.toggle('dark-mode');
   });
